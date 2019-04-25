@@ -17,13 +17,15 @@ Match cards in less time with less moves.
 
 ## How to Play
 
-- Download the zip folder and extract.
+- clone or Download the zip folder and extract.
 - Open the folder.
 - Right click index.html and choose a browser.
 - Enjoy the GAME!
 - Click on a card.
 - Keep revealing cards and working your memory to remember each unveiled card.
 - Match cards properly with less moves and in faster time
+
+Click on the [Link] https://ruchikapandey.github.io/ to play the live game.
 
 
 ## How I built the Memory Game
