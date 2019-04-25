@@ -1,0 +1,37 @@
+    * {
+    	padding: 0;
+    	margin: 0;
+    	box-sizing: border-box;
+    }
+    body {
+    	height: 100vh;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	background: #cccccc;
+    	font-family: 'Bungee Shade', cursive;
+    }
+    .bg {
+    	/* The image used */
+    	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/background.png);
+    	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background.png);
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
+    }
+    .container {
+    	font-size: 68px;
+    	text-align: center;
+    }
+    h1 {
+    	font-size: 80%;
+    	color: #ffffff;
+    }
+    p {
+    	font-size: 60%;
+    	color: #530808;
+    	margin-top: 10px;
+    }
+    .linktogame {
+    	text-decoration: none;
+    }

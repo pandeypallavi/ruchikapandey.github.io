@@ -1,0 +1,61 @@
+@media only screen and (max-width: 680px) {
+	#main-container {
+		height: 500px;
+		width: 500px;
+	}
+	.stars, .timer {
+		font-size: 22px;
+	}
+	#movecount {
+		font-size: 22px;
+	}
+	.butn {
+		font-size: 22px;
+	}
+	.front-face {
+		font-size: 24px;
+	}
+}
+@media only screen and (max-width: 580px) {
+	#main-container {
+		height: 460px;
+		width: 460px;
+	}
+	.stars, .timer {
+		font-size: 20px;
+	}
+	#movecount {
+		font-size: 20px;
+	}
+	.butn {
+		font-size: 20px;
+	}
+	.front-face {
+		font-size: 22px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#main-container {
+		height: 420px;
+		width: 420px;
+	}
+	.stars, .timer {
+		font-size: 18px;
+	}
+	#movecount {
+		font-size: 18px;
+	}
+	.butn {
+		font-size: 18px;
+	}
+	.front-face {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#main-container {
+		height: 400px;
+		width: 400px;
+	}
+}

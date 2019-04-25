@@ -1,0 +1,160 @@
+/* Basic structure */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body, html {
+	height: 100vh;
+	margin: 0;
+}
+.bg {
+	/* The image used */
+	background-image: url("../img/background.png");
+	/* Full height */
+	height: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Score Pandel */
+
+.scorepanel {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*border:solid yellow 1px; */
+}
+.stars, .timer {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	margin: 0 5px 0 0;
+	padding: 10px;
+	font-size: 24px;
+}
+.stars li, .timer {
+	list-style: none;
+	display: inline-block;
+	color: #ffffff;
+}
+.butn {
+	background: #2E481D;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 28px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+}
+.butn:hover {
+	background: #104000;
+	text-decoration: none;
+}
+#movecount {
+	color: #ffffff;
+	font-family: Arial;
+	padding: 10px;
+	font-size: 28px;
+}
+/* Game container */
+
+/* Game container */
+
+#main-container {
+	height: 600px;
+	width: 600px;
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	perspective: 1000px;
+}
+.memory-card {
+	width: calc(25% - 8px);
+	height: calc(25% - 8px);
+	/* border: 2px yellow solid; */
+	position: relative;
+	margin: 4px;
+	transform-style: preserve-3d;
+	transition: transform .5s;
+	border-radius: 20%;
+	-webkit-box-shadow: 10px 10px 108px -21px rgba(255, 99, 71, 0.11);
+	-moz-box-shadow: 10px 10px 108px -21px rgba(255, 99, 71, 0.11);
+	box-shadow: 10px 10px 108px -21px rgba(255, 99, 71, 0.11);
+}
+img {
+	width: calc(90% - 8px);
+	height: calc(90% - 8px);
+}
+.memory-card:active, .memory-card:hover {
+	transform: scale(.94);
+}
+.front-face, .back-face {
+	position: absolute;
+	width: 100%;
+	backface-visibility: hidden;
+}
+.memory-card.flip {
+	transform: rotateY(180deg);
+	pointer-events: none;
+}
+.front-face {
+	transform: rotateY(180deg);
+	opacity: 1;
+	color: #222B19;
+	text-align: center;
+	padding-top: 30%;
+	font-size: 32px;
+}
+.back-face {
+	position: absolute;
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	backface-visibility: hidden;
+	background: #000;
+	opacity: .6;
+	border-radius: 20%;
+}
+[class*="fruit"] {
+	background-color: #2E481D;
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	border-radius: 20%;
+}
+.fruit-banana {
+	color: #FFE07D;
+}
+.fruit-cherry {
+	color: #D13734;
+}
+.fruit-apple {
+	color: #F94848;
+}
+.fruit-grape {
+	color: #B278D2;
+}
+.fruit-orange {
+	color: #ED8F1F;
+}
+.fruit-pear {
+	color: #FFE239;
+}
+.fruit-lemon {
+	color: #F9D70C;
+}
+.fruit-pineapple {
+	color: #D6A550;
+}
+/* Match cards class */
+
+.match {
+	animation-name: tada;
+	animation-duration: .5s;
+	animation-delay: 1s;
+}

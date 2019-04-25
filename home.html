@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet prefetch">
+	<link href="resources/css/style.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+	<link href="resources/css/mediaqueries.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.0/sweetalert2.css" rel="stylesheet">
+	<title>Memory Game</title>
+</head>
+<body>
+	<section class="bg">
+		<div id="main-container">
+			<div class="scorepanel">
+				<ul class="stars">
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star"></i></li>
+				</ul>
+				<div id="movecount">
+					Move: 0
+				</div>
+				<div class="timer">
+					0 mins 0 secs
+				</div><button class="butn" onclick="reset()">Restart</button>
+			</div>
+			<div class="memory-card" data-name="banana">
+				<img alt="Banana" class="front-face fruit" src="resources/img/banana.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="banana">
+				<div class="front-face fruit-banana">
+					Banana
+				</div>
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="cherry">
+				<img alt="Cherry" class="front-face fruit" src="resources/img/cherry.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="cherry">
+				<div class="front-face fruit-cherry">
+					Cherry
+				</div>
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="apple">
+				<img alt="Apple" class="front-face fruit" src="resources/img/apple.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="apple">
+				<div class="front-face fruit-apple">
+					Apple
+				</div>
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="grape">
+				<img alt="Grape" class="front-face fruit" src="resources/img/grape.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="grape">
+				<div class="front-face fruit-grape">
+					Grape
+				</div>
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="orange">
+				<img alt="Orange" class="front-face fruit" src="resources/img/orange.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="orange">
+				<div class="front-face fruit-orange">
+					Orange
+				</div>
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="pear">
+				<img alt="Pear" class="front-face fruit" src="resources/img/pear.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="pear">
+				<div class="front-face fruit-pear">
+					Pear
+				</div>
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="lemon">
+				<img alt="Lemon" class="front-face fruit" src="resources/img/lemon.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="lemon">
+				<div class="front-face fruit-lemon">
+					Lemon
+				</div>
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="pineapple">
+				<img alt="Pineapple" class="front-face fruit" src="resources/img/pineapple.svg">
+				<div class="back-face"></div>
+			</div>
+			<div class="memory-card" data-name="pineapple">
+				<div class="front-face fruit-pineapple">
+					Pineapple
+				</div>
+				<div class="back-face"></div>
+			</div>
+		</div>
+	</section>
+	<script src="resources/js/script.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.0/sweetalert2.js">
+	</script>
+</body>
+</html>
